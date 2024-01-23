@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, .5);
+  color: #333333;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-box {
+  border-radius: .5rem;
+  width: 17.5rem;
+  overflow: hidden;
+  margin-inline: auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 1rem;
+  transition: transform .25s;
+}
+
+.confirm-box>* {
+  padding: 1rem;
+}
+
+header {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0 -.125rem .5rem rgba(0, 0, 0, .25);
+}
+
+header .close-button {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: .25s;
+  user-select: none;
+}
+
+header .close-button:hover {
+  color: #888888;
+}
+
+main {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main span#message {
+  display: flex;
+  justify-content: center;
+}
+
+main>* {
+  margin-block: 1rem;
+  width: 80%;
+}
+
+main .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .button-group button {
+  border: none;
+  color: #FFFFFF;
+  width: 5.75rem;
+  padding-block: .5rem;
+  cursor: pointer;
+  border-radius: .25rem;
+  transition: .125s;
+  user-select: none;
+}
+
+main .button-group .no:hover {
+  background-color: #FFC4C4;
+}
+
+main .button-group .yes:hover {
+  background-color: #A7D2CB;
+}
+
+main .button-group .no {
+  background-color: #DD4A48;
+}
+
+main .button-group .yes {
+  background-color: #3FA796;
+}
