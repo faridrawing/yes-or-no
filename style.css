@@ -85,10 +85,12 @@ main .button-group .yes:hover {
   background-color: #A7D2CB;
 }
 
-main .button-group .no {
+main .button-group .no,
+main .button-group .no:focus {
   background-color: #DD4A48;
 }
 
-main .button-group .yes {
+main .button-group .yes,
+main .button-group .yes:focus {
   background-color: #3FA796;
 }
